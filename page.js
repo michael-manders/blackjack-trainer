@@ -301,18 +301,18 @@ function newHand() {
 
     for (let card of playerCards) {
         let cardImage = document.createElement("img");
-        cardImage.src = `./images/cards/${card}`;
+        cardImage.src = `./webimages/cards/${card}`;
         cardImage.classList.add("card");
         playerHandContainer.appendChild(cardImage);
     }
 
     let cardImage = document.createElement("img");
-    cardImage.src = `./images/cards/${dealerCard}`;
+    cardImage.src = `./webimages/cards/${dealerCard}`;
     cardImage.classList.add("card");
     dealerHandContainer.appendChild(cardImage);
 
     let cardBack = document.createElement("img");
-    cardBack.src = `./images/card_back.png`;
+    cardBack.src = `./webimages/card_back.png`;
     cardBack.classList.add("card");
     dealerHandContainer.appendChild(cardBack);
 }
